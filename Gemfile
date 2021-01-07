@@ -33,8 +33,9 @@ gem 'activeadmin'
 gem 'cancancan', '~> 2.0'
 
 # Design
-gem 'materialize-sass'
+gem 'bootstrap', '~> 4.5', '>= 4.5.3'
 gem 'mini_racer'
+gem 'jquery-rails'
 
 # Images
 gem 'mini_magick', '~> 4.8'
