@@ -7,7 +7,11 @@ class User < ApplicationRecord
 
   has_many :doctors
   belongs_to :doctors
-
+  has_many :treatments
+  has_many :diets
+  has_many :diagnosis
+  has_many :appointments
+  has_many :hospitalizations 
 
   
 end

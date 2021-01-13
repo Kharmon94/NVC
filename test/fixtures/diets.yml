@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food: MyText
+  drink: MyText
+  exercise: MyText
+  mental: MyText
+  user: one
+  doctor: one
+
+two:
+  food: MyText
+  drink: MyText
+  exercise: MyText
+  mental: MyText
+  user: two
+  doctor: two

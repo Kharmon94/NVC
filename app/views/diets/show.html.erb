@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Food:</strong>
+  <%= @diet.food %>
+</p>
+
+<p>
+  <strong>Drink:</strong>
+  <%= @diet.drink %>
+</p>
+
+<p>
+  <strong>Exercise:</strong>
+  <%= @diet.exercise %>
+</p>
+
+<p>
+  <strong>Mental:</strong>
+  <%= @diet.mental %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @diet.user %>
+</p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @diet.doctor %>
+</p>
+
+<%= link_to 'Edit', edit_diet_path(@diet) %> |
+<%= link_to 'Back', diets_path %>

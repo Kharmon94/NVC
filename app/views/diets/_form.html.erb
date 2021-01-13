@@ -1,0 +1,47 @@
+<%= form_with(model: diet, local: true) do |form| %>
+  <% if diet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(diet.errors.count, "error") %> prohibited this diet from being saved:</h2>
+
+      <ul>
+      <% diet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :food %>
+    <%= form.text_area :food %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drink %>
+    <%= form.text_area :drink %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exercise %>
+    <%= form.text_area :exercise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mental %>
+    <%= form.text_area :mental %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doctor_id %>
+    <%= form.text_field :doctor_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

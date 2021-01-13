@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :hospitalizations
+  resources :treatments
+  resources :appointments
+  resources :diagnoses
+  resources :diets
   devise_for :doctors
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

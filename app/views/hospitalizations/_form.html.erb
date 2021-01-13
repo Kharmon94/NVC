@@ -1,0 +1,37 @@
+<%= form_with(model: hospitalization, local: true) do |form| %>
+  <% if hospitalization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hospitalization.errors.count, "error") %> prohibited this hospitalization from being saved:</h2>
+
+      <ul>
+      <% hospitalization.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :admit %>
+    <%= form.text_field :admit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discharge %>
+    <%= form.text_field :discharge %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reasons %>
+    <%= form.text_area :reasons %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
